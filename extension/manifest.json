@@ -1,0 +1,24 @@
+{
+    "name": "Test IME",
+    "version": "0.1",
+    "manifest_version": 3,
+    "description": "A simple IME that converts all keystrokes to upper case.",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "input"
+    ],
+    "input_components": [
+        {
+            "name": "Test IME",
+            "type": "ime",
+            "id": "test",
+            "description": "Test IME",
+            "language": "en-US",
+            "layouts": [
+                "us::eng"
+            ]
+        }
+    ]
+}
